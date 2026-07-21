@@ -1,0 +1,38 @@
+{
+  "name": "playable-ads",
+  "version": "1.0.0",
+  "description": "Create production-ready HTML5 playable ads for mobile game user acquisition, with MRAID integration and network-specific compliance for Unity Ads, ironSource, AdMob, AppLovin, and Meta Audience Network",
+  "author": {
+    "name": "Ihar Lapukhou",
+    "email": "ihar.lapukhou@gmail.com",
+    "url": "https://github.com/lapukhou"
+  },
+  "homepage": "https://github.com/lapukhou/plugin-playable-ads#readme",
+  "repository": "https://github.com/lapukhou/plugin-playable-ads",
+  "license": "MIT",
+  "keywords": [
+    "playable-ads",
+    "html5",
+    "mraid",
+    "user-acquisition",
+    "mobile-games",
+    "ad-networks"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Playable Ads",
+    "shortDescription": "Build and optimize HTML5 playable ads.",
+    "longDescription": "Create production-ready HTML5 playable ads with MRAID, asset optimization, and ad-network compliance guidance.",
+    "developerName": "Ihar Lapukhou",
+    "category": "marketing",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Create a match-3 playable ad for AppLovin.",
+      "Optimize this playable ad for AdMob's size limit.",
+      "Add ironSource MRAID integration to my playable ad."
+    ]
+  }
+}

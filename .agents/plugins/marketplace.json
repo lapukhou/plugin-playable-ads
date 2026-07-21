@@ -1,0 +1,20 @@
+{
+  "name": "plugin-playable-ads",
+  "interface": {
+    "displayName": "Playable Ads Plugin"
+  },
+  "plugins": [
+    {
+      "name": "playable-ads",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "marketing"
+    }
+  ]
+}

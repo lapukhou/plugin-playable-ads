@@ -1,0 +1,27 @@
+{
+  "name": "plugin-playable-ads",
+  "owner": {
+    "name": "Ihar Lapukhou",
+    "email": "ihar.lapukhou@gmail.com"
+  },
+  "metadata": {
+    "description": "Plugins by Ihar Lapukhou: playable ads creation for mobile game user acquisition",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "playable-ads",
+      "source": "./",
+      "repository": "https://github.com/lapukhou/plugin-playable-ads",
+      "description": "Create production-ready HTML5 playable ads for mobile game user acquisition, with MRAID integration and network-specific compliance for Unity Ads, ironSource, AdMob, AppLovin, and Meta Audience Network",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ihar Lapukhou",
+        "email": "ihar.lapukhou@gmail.com"
+      },
+      "license": "MIT",
+      "keywords": ["playable-ads", "html5", "mraid", "user-acquisition", "mobile-games", "ad-networks"],
+      "category": "marketing"
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 # Playable Ads Plugin
 
-A Claude Code plugin for creating production-ready HTML5 playable ads for mobile game user acquisition.
+A Codex and Claude Code plugin for creating production-ready HTML5 playable ads for mobile game user acquisition.
 
 ## What it does
 
-Provides one skill, **playable-ads-creator**, which Claude activates automatically when you ask to build, create, or optimize playable ads, interactive ads, or HTML5 game ads. It covers the full workflow:
+Provides one skill, **playable-ads-creator**, which activates automatically when you ask to build, create, or optimize playable ads, interactive ads, or HTML5 game ads. It covers the full workflow:
 
 1. **Generate** a single-file HTML5 game prototype (`match3`, `runner`, or `bubble` templates)
 2. **Implement** game logic with touch-optimized, 60 FPS patterns
@@ -26,22 +26,38 @@ Provides one skill, **playable-ads-creator**, which Claude activates automatical
 
 ```
 plugin-playable-ads/
+├── .agents/plugins/marketplace.json       # Codex marketplace manifest
 ├── .claude-plugin/
-│   └── plugin.json
-└── skills/
-    └── playable-ads-creator/
-        ├── SKILL.md
-        ├── references/      # Network specs, AppLovin compliance, game mechanics patterns
-        ├── scripts/         # generate / optimize / integrate / validate (Python 3, stdlib only)
-        └── assets/          # Reserved for custom per-project art
+│   ├── marketplace.json                    # Claude Code marketplace manifest
+│   └── plugin.json                         # Claude Code plugin manifest
+├── .codex-plugin/plugin.json               # Codex plugin manifest
+└── skills/playable-ads-creator/            # Shared skill and resources
 ```
 
 ## Installation
 
-Install from a marketplace that lists this plugin, or add it locally:
+### Codex
+
+Add this repository's marketplace, then install the plugin:
+
+```bash
+codex plugin marketplace add /path/to/plugin-playable-ads
+codex plugin add playable-ads@plugin-playable-ads
+```
+
+### Claude Code
+
+This repository is also a Claude Code marketplace (`plugin-playable-ads`). Add it and install the plugin:
 
 ```
-/plugin install playable-ads
+/plugin marketplace add lapukhou/plugin-playable-ads
+/plugin install playable-ads@plugin-playable-ads
+```
+
+For local development, point the marketplace at the checkout instead:
+
+```
+/plugin marketplace add /path/to/plugin-playable-ads
 ```
 
 ## Usage
