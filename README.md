@@ -31,7 +31,7 @@ plugin-playable-ads/
 │   ├── marketplace.json                    # Claude Code marketplace manifest
 │   └── plugin.json                         # Claude Code plugin manifest
 ├── .codex-plugin/plugin.json               # Codex plugin manifest
-├── commands/set-store-url.md               # /set-store-url slash command (Claude Code)
+├── commands/set-store-url.md               # /set-store-url slash command (Claude Code + Codex)
 └── skills/playable-ads-creator/            # Shared skill and resources
 ```
 
@@ -69,7 +69,7 @@ Just ask, for example:
 - "Optimize this playable for AdMob's 2MB limit"
 - "Add ironSource MRAID integration to my playable ad"
 
-### Commands (Claude Code)
+### Commands (Claude Code and Codex)
 
 - `/set-store-url [store-url] [path/to/playable.html]` — set or replace the app store URL in a playable ad. Both arguments are optional: with no URL it uses the default ([Clever: Brain Training Games](https://apps.apple.com/us/app/clever-brain-training-games/id1599756543)); with no path it finds the playable HTML automatically.
 
